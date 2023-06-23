@@ -3,7 +3,6 @@ import apiClient from "../services/api-client";
 import { CanceledError } from "axios";
 import { Platform } from "../components/PlatformIconList";
 
-
 export interface Game {
   id: number;
   name: string;
