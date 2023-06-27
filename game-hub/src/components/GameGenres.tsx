@@ -1,11 +1,6 @@
 import { HStack, Text } from "@chakra-ui/react";
 import React from "react";
-
-export interface Genre {
-  id: number;
-  name: string;
-  slug: string;
-}
+import { Genre } from "../hooks/useGenre";
 
 interface Props {
   genres: Genre[];

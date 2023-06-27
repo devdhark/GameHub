@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import apiClient from "../services/api-client";
 import { CanceledError } from "axios";
 import { Platform } from "../components/PlatformIconList";
-import { Genre } from "../components/GenreList";
+import { Genre } from "./useGenres";
 
 export interface Game {
   id: number;
