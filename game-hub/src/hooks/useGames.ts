@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import apiClient from "../services/api-client";
 import { CanceledError } from "axios";
 import { Platform } from "../components/PlatformIconList";
+import { Genre } from "../components/GenreList";
 
 export interface Game {
   id: number;
@@ -9,6 +10,7 @@ export interface Game {
   background_image: string;
   parent_platforms: { platform: Platform }[];
   metacritic: number;
+  genres: Genre[]
 }
 
 interface FetchGamesResponse {

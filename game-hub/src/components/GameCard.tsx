@@ -4,6 +4,7 @@ import { Card, CardBody, HStack, Heading, Image, Text } from "@chakra-ui/react";
 import PlatformIconList from "./PlatformIconList";
 import CriticScore from "./CriticScore";
 import getCroppedImageUrl from "../services/image-url";
+import GenreList from "./GenreList";
 
 interface Props {
   game: Game;
@@ -20,6 +21,10 @@ const GameCard = ({ game }: Props) => {
             platform={game.parent_platforms.map((p) => p.platform)}
           />
           <CriticScore score={game.metacritic} />
+        </HStack>
+        <HStack justifyContent="space-between">
+          <Text>Genre: </Text>
+          <GenreList genre={game.genres.map((g) => g)} />
         </HStack>
       </CardBody>
     </Card>
