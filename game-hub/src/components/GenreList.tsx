@@ -8,13 +8,13 @@ export interface Genre {
 }
 
 interface Props {
-  genre: Genre[];
+  genres: Genre[];
 }
 
-const GenreList = ({ genre }: Props) => {
+const GenreList = ({ genres }: Props) => {
   return (
     <HStack marginY={1}>
-      {genre.map((genre) => (
+      {genres.map((genre) => (
         <Text key={genre.id}>{genre.name}</Text>
       ))}
     </HStack>

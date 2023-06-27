@@ -24,7 +24,7 @@ const GameCard = ({ game }: Props) => {
         </HStack>
         <HStack justifyContent="space-between">
           <Text>Genre: </Text>
-          <GenreList genre={game.genres.map((g) => g)} />
+          <GenreList genres={game.genres} />
         </HStack>
       </CardBody>
     </Card>
