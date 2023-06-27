@@ -4,7 +4,7 @@ import { Card, CardBody, HStack, Heading, Image, Text } from "@chakra-ui/react";
 import PlatformIconList from "./PlatformIconList";
 import CriticScore from "./CriticScore";
 import getCroppedImageUrl from "../services/image-url";
-import GenreList from "./GenreList";
+import GameGenre from "./GameGenres";
 
 interface Props {
   game: Game;
@@ -24,7 +24,7 @@ const GameCard = ({ game }: Props) => {
         </HStack>
         <HStack justifyContent="space-between">
           <Text>Genre: </Text>
-          <GenreList genres={game.genres} />
+          <GameGenre genres={game.genres} />
         </HStack>
       </CardBody>
     </Card>
