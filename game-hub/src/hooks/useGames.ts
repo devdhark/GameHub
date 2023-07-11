@@ -1,6 +1,6 @@
-import { Platform } from "../components/PlatformIconList";
 import { Genre } from "./useGenres";
 import useData from "./useData";
+import { Platform } from "./usePlatforms";
 
 export interface Game {
   id: number;
