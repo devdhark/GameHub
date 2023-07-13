@@ -1,6 +1,6 @@
 import { HStack, Text } from "@chakra-ui/react";
 import React from "react";
-import { Genre } from "../hooks/useGenre";
+import { Genre } from "../hooks/useGenres";
 
 interface Props {
   genres: Genre[];
